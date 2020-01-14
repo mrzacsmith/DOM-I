@@ -53,21 +53,23 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 // JS DOM text
 // nav DOM
 let navWords = document.querySelectorAll("a");
-navWords[0].textContent = siteContent.nav["nav-item-1"];
-navWords[1].textContent = siteContent.nav["nav-item-2"];
-navWords[2].textContent = siteContent.nav["nav-item-3"];
-navWords[3].textContent = siteContent.nav["nav-item-4"];
-navWords[4].textContent = siteContent.nav["nav-item-5"];
-navWords[5].textContent = siteContent.nav["nav-item-6"];
+// navWords[0].textContent = siteContent.nav["nav-item-1"];
+// navWords[1].textContent = siteContent.nav["nav-item-2"];
+// navWords[2].textContent = siteContent.nav["nav-item-3"];
+// navWords[3].textContent = siteContent.nav["nav-item-4"];
+// navWords[4].textContent = siteContent.nav["nav-item-5"];
+// navWords[5].textContent = siteContent.nav["nav-item-6"];
 
-// const navText = document.querySelectorAll("a");
-// arrNavText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
+const navText = document.querySelectorAll("a");
+arrNavText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
 
-// for (let i = 0; i < arrNavText.length; i++) {
-//   navText[i].textContent = arrNavText[i];
-// }
+for (let i = 0; i < arrNavText.length; i++) {
+  navText[i].textContent = arrNavText[i];
+}
+// const countKey = Object.keys(siteContent.nav).length;
+// console.log(countKey)
 
-// for(let i = 0; i < 6; i++) {
+// for(let i = 0; i < countKey; i++) {
 //   navWords[i].textContent = siteContent.nav{`nav-item-${i+1}`}
 // }
 
